@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+
+:root {
+  /* Brand Colors */
+  --brand-primary: #9333ea;
+  --gradient-from: #9333ea;
+  --gradient-to: #db2777;
+  
+  /* Backgrounds */
+  --background: #ffffff;
+  --section-bg: #f9fafb;
+  --card-bg: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  
+  /* Hero Gradient */
+  --hero-gradient-from: #9333ea;
+  --hero-gradient-via: #db2777;
+  --hero-gradient-to: #2563eb;
+  --hero-accent-from: #fde047;
+  --hero-accent-to: #fbcfe8;
+  --hero-text-muted: rgba(255, 255, 255, 0.9);
+  
+  /* Text Colors */
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --text-on-primary: #ffffff;
+  
+  /* Buttons */
+  --button-primary-bg: #ffffff;
+  --button-primary-text: #9333ea;
+  --button-secondary-bg: #f3f4f6;
+  --button-secondary-hover: #e5e7eb;
+  --button-ghost-bg: rgba(255, 255, 255, 0.1);
+  --button-ghost-border: rgba(255, 255, 255, 0.3);
+  --button-ghost-hover: rgba(255, 255, 255, 0.2);
+  
+  /* Borders */
+  --border-color: #e5e7eb;
+  --nav-border: #e5e7eb;
+  
+  /* Badge */
+  --badge-bg: rgba(255, 255, 255, 0.2);
+  
+  /* Feature Cards */
+  --feature-1-bg: #f3e8ff;
+  --feature-1-icon: #9333ea;
+  --feature-2-bg: #fce7f3;
+  --feature-2-icon: #db2777;
+  --feature-3-bg: #dbeafe;
+  --feature-3-icon: #2563eb;
+  
+  /* Success Color */
+  --success-color: #22c55e;
+}
+
+.dark {
+  /* Brand Colors (same in dark mode) */
+  --brand-primary: #a855f7;
+  
+  /* Backgrounds */
+  --background: #111827;
+  --section-bg: #1f2937;
+  --card-bg: #111827;
+  --nav-bg: rgba(17, 24, 39, 0.8);
+  
+  /* Hero Gradient */
+  --hero-gradient-from: #581c87;
+  --hero-gradient-via: #831843;
+  --hero-gradient-to: #1e3a8a;
+  
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --text-muted: #6b7280;
+  
+  /* Buttons */
+  --button-secondary-bg: #1f2937;
+  --button-secondary-hover: #374151;
+  
+  /* Borders */
+  --border-color: #374151;
+  --nav-border: #1f2937;
+  
+  /* Badge */
+  --badge-bg: rgba(0, 0, 0, 0.2);
+  
+  /* Feature Cards */
+  --feature-1-bg: #581c87;
+  --feature-1-icon: #a855f7;
+  --feature-2-bg: #831843;
+  --feature-2-icon: #ec4899;
+  --feature-3-bg: #1e3a8a;
+  --feature-3-icon: #3b82f6;
+}
+
