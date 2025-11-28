@@ -5,4 +5,10 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-app.get("/signUP")
+app.get("/health", (req, res) => {
+  res.send("healthy!")
+})
+
+app.listen(port, ()=> {
+  console.log("listening")
+})
