@@ -31,7 +31,7 @@ export default function Navigation({ darkMode, setDarkMode, mobileMenuOpen, setM
               {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
             <button className="px-6 py-2 bg-gradient-to-r from-[var(--gradient-from)] to-[var(--gradient-to)] text-[var(--text-on-primary)] rounded-lg hover:shadow-lg hover:scale-105 transition">
-              Get Started
+              Log in / Sign up
             </button>
           </div>
 
