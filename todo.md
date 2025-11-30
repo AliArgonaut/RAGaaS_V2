@@ -1,7 +1,7 @@
 CHECKLIST FOR NEXT
 -[] add a splash of muted red to without, and the logo text  
--[] react router
--[] link signup to router
+-[x] react router
+-[x] link signup to router
 
 -[] beautiful dashboard demo
 -[] what is RAG? what does it enable?

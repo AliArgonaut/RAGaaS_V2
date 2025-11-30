@@ -1,6 +1,6 @@
 
 import { Moon, Sun, Database, Zap, Shield, ArrowRight, CheckCircle, Menu, X } from 'lucide-react';
-
+import { Link } from 'react-router-dom'
 export default function Navigation({ darkMode, setDarkMode, mobileMenuOpen, setMobileMenuOpen }) {
   return (
     <nav className="fixed w-full bg-[var(--nav-bg)] backdrop-blur-md z-50 border-b border-[var(--nav-border)]">
@@ -15,15 +15,17 @@ export default function Navigation({ darkMode, setDarkMode, mobileMenuOpen, setM
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-[var(--text-secondary)] hover:text-[var(--brand-primary)] transition">
-              Features
-            </a>
-            <a href="#pricing" className="text-[var(--text-secondary)] hover:text-[var(--brand-primary)] transition">
-              Pricing
-            </a>
-            <a href="#docs" className="text-[var(--text-secondary)] hover:text-[var(--brand-primary)] transition">
-              Docs
-            </a>
+            <div className="text-[var(--text-secondary)] hover:text-[var(--brand-primary)] transition">
+             <Link to="/features">Features</Link> 
+            </div>
+            <div className="text-[var(--text-secondary)] hover:text-[var(--brand-primary)] transition">
+              
+             <Link to="/pricing">Pricing</Link> 
+
+            </div>
+            <div className="text-[var(--text-secondary)] hover:text-[var(--brand-primary)] transition">
+              <Link to="/docs">Docs</Link>
+            </div>
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="p-2 rounded-lg bg-[var(--button-secondary-bg)] text-[var(--text-secondary)] hover:bg-[var(--button-secondary-hover)] transition"
@@ -31,7 +33,7 @@ export default function Navigation({ darkMode, setDarkMode, mobileMenuOpen, setM
               {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
             <button className="px-6 py-2 bg-gradient-to-r from-[var(--gradient-from)] to-[var(--gradient-to)] text-[var(--text-on-primary)] rounded-lg hover:shadow-lg hover:scale-105 transition">
-              Log in / Sign up
+              <Link to="/signup">Log in / Sign up</Link>
             </button>
           </div>
 

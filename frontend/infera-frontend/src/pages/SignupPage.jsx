@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Database, Mail, Lock, User, ArrowRight, Check, Github, Chrome } from 'lucide-react';
 
-export default function SignUpPage() {
+export default function SignupPage() {
   const [darkMode, setDarkMode] = useState(true);
   const [formData, setFormData] = useState({
     name: '',
