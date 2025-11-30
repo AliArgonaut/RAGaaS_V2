@@ -37,7 +37,7 @@ export default function SignupPage() {
             <div className="hidden md:block">
               <div className="flex items-center space-x-2 mb-8">
                 <Database className="w-10 h-10 text-[var(--brand-primary)]" />
-                <span className="text-3xl font-bold bg-gradient-to-r from-[var(--gradient-from)] to-[var(--gradient-to)] bg-clip-text text-transparent">
+                <span className="text-3xl font-bold bg-gradient-to-r from-[var(--gradient-from)] to-[var(--gradient-to)] bg-clip-text text-black">
                   Infera
                 </span>
               </div>
