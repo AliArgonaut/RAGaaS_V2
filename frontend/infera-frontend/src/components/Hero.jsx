@@ -14,10 +14,7 @@ export default function Hero() {
           Enterprise RAG infrastructure without the complexity
 
           <br />
-          <span className="bg-gradient-to-r from-[var(--hero-accent-from)] to-[var(--hero-accent-to)] bg-clip-text text-transparent">
-            Made Simple
-          </span>
-        </h1>
+                  </h1>
         
         <p className="text-xl md:text-2xl text-[var(--hero-text-muted)] mb-10 max-w-3xl mx-auto">
           Deploy production-ready Retrieval Augmented Generation in minutes. 
