@@ -1,13 +1,13 @@
-package com.example.backend;
+package infera.backend.ragaas;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class RagaasApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(RagaasApplication.class, args);
 	}
 
 }

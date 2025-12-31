@@ -1,10 +1,10 @@
-package com.example.backend;
+package infera.backend.ragaas;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class RagaasApplicationTests {
 
 	@Test
 	void contextLoads() {
