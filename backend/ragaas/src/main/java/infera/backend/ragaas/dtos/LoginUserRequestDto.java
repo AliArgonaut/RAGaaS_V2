@@ -1,8 +1,10 @@
 package infera.backend.ragaas.dtos;
 
+import jakarta.validation.constraints.NotBlank;
+
 public record LoginUserRequestDto(
-        String password,
-        String email
+        @NotBlank String password,
+        @NotBlank String email
 
 ) {
 }

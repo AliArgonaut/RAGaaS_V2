@@ -5,5 +5,6 @@ public record LoginUserResponseDto(
         String username,
         String tokenType,
         Long expiresIn, // milliseconds
-        String email) {
+        String email,
+        String responseStatusMsg) {
 }

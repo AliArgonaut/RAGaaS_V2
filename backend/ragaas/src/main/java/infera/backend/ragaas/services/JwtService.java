@@ -3,12 +3,18 @@
 // It is not connected to any controllers.
 package infera.backend.ragaas.services;
 
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+import java.util.Map;
 
 @Service
 public class JwtService {
-    private String JWTSECRET = System.getenv("JWTSECRET");
+    public String generateJwtToken(Map<String, Object> userDetails) {
+        System.out.println(userDetails);
+        return "yo";
+    }
 
-        @Value("${jwt.secret:JWTSECRET}")
+    public long getExpirationTime() {
+        return 83766690;
+    }
 
 }

@@ -1,5 +1,6 @@
 package infera.backend.ragaas.controllers;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import jakarta.validation.*;
@@ -20,7 +21,8 @@ public class LoginUserController {
     @PostMapping
     public ResponseEntity<LoginUserResponseDto> loginUser(@Valid @RequestBody LoginUserRequestDto loginUserRequestDto) {
         LoginUserResponseDto loginUserResponseDto = loginUserService.loginUser(loginUserRequestDto);
-        return ResponseEntity.ok(loginUserResponseDto);
+        System.out.println(loginUserResponseDto.email());
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(loginUserResponseDto);
     };
 
 };
