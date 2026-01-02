@@ -1,3 +1,4 @@
+
 package infera.backend.ragaas.services;
 
 import infera.backend.ragaas.dtos.CreateUserRequestDto;
@@ -26,18 +27,18 @@ public class CreateUserService {
     public CreateUserResponseDto createUser(CreateUserRequestDto request) {
         validateUserData(request);
 
-        if (!isUsernameAvailable(request.getUsername())) {
+        if (!isUsernameAvailable(request.username())) {
             throw new IllegalArgumentException("Username is already taken");
         }
 
-        if (!isEmailAvailable(request.getEmail())) {
+        if (!isEmailAvailable(request.email())) {
             throw new IllegalArgumentException("Email is already registered");
         }
 
         UserEntity user = new UserEntity();
-        user.setUsername(request.getUsername());
-        user.setEmail(request.getEmail());
-        user.setPassword(passwordEncoder.encode(request.getPassword()));
+        user.setUsername(request.username());
+        user.setEmail(request.email());
+        user.setPassword(passwordEncoder.encode(request.password()));
         user.setCreatedAt(LocalDateTime.now());
         user.setEnabled(true);
 
@@ -57,26 +58,26 @@ public class CreateUserService {
         return !userRepository.existsByEmail(email);
     }
 
-    // ------------------ Validation Utils ------------------
+    // Validation Utils
 
     private void validateUserData(CreateUserRequestDto request) {
-        if (request.getUsername() == null || request.getUsername().trim().isEmpty()) {
+        if (request.username() == null || request.username().trim().isEmpty()) {
             throw new IllegalArgumentException("Username cannot be empty");
         }
 
-        if (request.getEmail() == null || request.getEmail().trim().isEmpty()) {
+        if (request.email() == null || request.email().trim().isEmpty()) {
             throw new IllegalArgumentException("Email cannot be empty");
         }
 
-        if (request.getPassword() == null || request.getPassword().length() < 8) {
+        if (request.password() == null || request.password().length() < 8) {
             throw new IllegalArgumentException("Password must be at least 8 characters long");
         }
 
-        if (!isValidEmail(request.getEmail())) {
+        if (!isValidEmail(request.email())) {
             throw new IllegalArgumentException("Invalid email format");
         }
 
-        if (request.getUsername().length() < 3 || request.getUsername().length() > 50) {
+        if (request.username().length() < 3 || request.username().length() > 50) {
             throw new IllegalArgumentException("Username must be between 3 and 50 characters");
         }
     }
