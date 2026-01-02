@@ -26,11 +26,11 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf
                         .disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/accounts/create")
+                        .requestMatchers("/v1/api/accounts/create")
                         .permitAll()
-                        .requestMatchers("/api/accounts/check-username/**")
+                        .requestMatchers("/v1/api/accounts/check-username/**")
                         .permitAll()
-                        .requestMatchers("/api/accounts/check-email/**")
+                        .requestMatchers("/v1/api/accounts/check-email/**")
                         .permitAll()
                         .anyRequest()
                         .authenticated());
