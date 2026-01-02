@@ -83,6 +83,6 @@ public class LoginUserService {
         UserEntity user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new RuntimeException("user does not exist"));
         String hashedExistingUserPassword = user.getPassword();
-        return passwordEncoder.matches(hashedExistingUserPassword, password);
+        return passwordEncoder.matches(password, hashedExistingUserPassword);
     }
 }

@@ -10,7 +10,7 @@ import infera.backend.ragaas.dtos.LoginUserResponseDto;
 import infera.backend.ragaas.services.LoginUserService;
 
 @RestController
-@RequestMapping("/v1/api/login")
+@RequestMapping("/v1/api/accounts/login")
 public class LoginUserController {
     private LoginUserService loginUserService;
 
