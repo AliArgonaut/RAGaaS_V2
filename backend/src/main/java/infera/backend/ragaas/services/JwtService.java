@@ -22,10 +22,8 @@ public class JwtService {
     @Value("${jwt.secret}")
     private String jwtSecret;
 
-    @Value("${jwt.expiration}")
-    private String jwtExpirationTimeString;
+    private long jwtExpirationTime = 86400000;
 
-    private long jwtExpirationTime = Long.parseLong(jwtExpirationTimeString);
     private SecretKey key;
 
     @PostConstruct
