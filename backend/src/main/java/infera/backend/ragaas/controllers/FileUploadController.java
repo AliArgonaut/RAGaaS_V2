@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import infera.backend.ragaas.services.FileUploadService;
+import infera.backend.ragaas.dtos.FileUploadResponseDto;
 
 @RestController
 @RequestMapping("/v1/api/upload")

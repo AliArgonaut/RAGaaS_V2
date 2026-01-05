@@ -5,6 +5,6 @@ import infera.backend.ragaas.entities.FileEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 @Repository
-public class FileUploadRepository extends JpaRepository<FileEntity, Long> {
+public interface FileUploadRepository extends JpaRepository<FileEntity, Long> {
 
 }
